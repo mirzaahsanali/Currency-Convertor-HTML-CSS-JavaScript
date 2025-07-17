@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+*{
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(250deg,#ffe4c4,#ffa086,#ff9871,#ff9871);
+    background-size: 240% 240%;
+    animation: gradient-animation 10s ease infinite;
+    
+    
+}
+
+
+@keyframes gradient-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Keyframes for rotation */
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.main{
+    height: 50%;
+    width: 30%;
+    background-color: hsla(0, 0%, 100%, 0.7);
+    border-radius: 40px;
+    padding: 10px 50px;
+    
+}
+
+.input{
+    border: none;
+}
+
+
+#amount{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+    padding: 0px 10px;
+}
+
+.selections-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+.from-div , .to-div{
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: #fff;
+    padding: 0px 10px;
+    border-radius: 10px;
+}
+
+img{
+    width: 20%
+}
+
+.from-selection-div{
+    width: 40%;
+}
+
+.to-selection-div{
+    width: 40%;
+}
+
+.currency-selection{
+    width: 70%;
+    margin-left: 5%;
+    border: none;
+}
+
+.currency-selection:focus{
+    border: none
+}
+
+button{
+    font-size: 1.15rem;
+    width: 300px;
+    height: 50px;
+    background-color: #ff9c5b;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}

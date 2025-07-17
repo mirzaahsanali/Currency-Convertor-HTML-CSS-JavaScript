@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CURRECY CONVERTER</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="main">
+            <h1>Currency Converter</h1>
+            <form>
+                <h3>Enter Amount</h3>
+                <input type="text" id="amount" value="1" />
+                <div class="selections-div">
+                    <div class="from-selection-div">
+                        <h3>From</h3>
+                        <div class="from-div">
+                            <img
+                                id="from-flag"
+                                src="https://flagsapi.com/US/flat/64.png"
+                                alt="country-flag"
+                            />
+                            <select
+                                class="currency-selection"
+                                id="from-currency"
+                            ></select>
+                        </div>
+                    </div>
+                    <div class="to-selection-div">
+                        <h3>To</h3>
+                        <div class="to-div">
+                            <img
+                                id="to-flag"
+                                src="https://flagsapi.com/PK/flat/64.png"
+                                alt="country-flag"
+                            />
+                            <select
+                                class="currency-selection"
+                                id="to-currency"
+                            ></select>
+                        </div>
+                    </div>
+                </div>
+                <center>
+                    <h3 id="result">Select Exchange Options</h3>
+                    <button>Get Exchange Rate</button>
+                </center>
+            </form>
+        </div>
+    </body>
+    <script src="codes.js"></script>
+    <script src="converter.js"></script>
+</html>
